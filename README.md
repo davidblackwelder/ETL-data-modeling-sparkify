@@ -11,7 +11,11 @@ A star schema for this project because this is optimized for queries. My fact ta
 
 ## Project Files
 `db_config.py` Loads in your `.env` data for connecting to both your own default database as well as the sparkifydb.
+
 `create_tables.py` drops and creates tables for the sparkifydb.
+
 `etl.ipyn` reads and process a single file from `song_data` and `log_data` to load into the tables for sparkifydb. This contains the detailed instructions on the ETL process for each of the tables and is used to implement the `etl.py` file.
+
 `etl.py` Reads and processes all the files from `song_data` and `log_data` and then loads them into the tables.
+
 `sql_queries.py` Contains all the SQL commands and queries.
